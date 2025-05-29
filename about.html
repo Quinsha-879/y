@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f5;
+      display: flex;
+      flex-direction: column;         
+      min-height: 100vh;
+    }
+
+    .main-content {
+      display: flex;
+      flex: 1;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: rgb(0, 153, 255);
+      padding: 40px 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      font-family: Verdana;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin: 20px 0;
+    }
+
+    .sidebar li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar li a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .about-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    /* Adjusted layout: vertical stacking */
+    .about-top {
+      display: block; /* no flex for stacking */
+      margin-bottom: 30px;
+      padding-right: 50px;
+    }
+
+    .profile {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    h2.role {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .t1 {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Birthday info below paragraph, styled separately */
+    .birthday-info {
+      max-width: 800px;
+      margin: 0 auto 30px; /* margin below */
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+
+
+    .about-info {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .info {
+      display: flex;
+      gap: 40px;
+      margin-top: 35px;
+      text-align:center;
+    }
+
+    .info div p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      display: flex;
+    }
+
+    .info div p b {
+      width: 90px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .custom-footer {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4px);
+      animation: fadeInFooter 1s ease-in-out;
+    }
+
+    @keyframes fadeInFooter {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <div class="sidebar">
+      <h2>QUEEN'S</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="about-content">
+      <div class="about-top">
+        <div class="profile">
+          <img src="QUINSHA ATHAYA NASYWAMEVIA.JPG" alt="Profile" />
+        </div>
+        <h2 class="role">Web Developer</h2>
+        <div class="t1">
+          <p>
+            Hi! I’m Quinsha, a creative student with a big passion for drawing and writing.
+            I love turning ideas into colorful illustrations and meaningful stories. Art and words
+            help me express myself and share my view of the world. Besides drawing and writing,
+            I enjoy chocolate, learning new things, and I’m also interested in public speaking
+            because I want to be confident when speaking in front of others. I'm currently learning
+            and growing every day, and this portfolio reflects my journey so far.
+          </p>
+        </div>
+
+      
+
+        <div class="about-info">
+          <div class="info">
+            <div>
+              <p><b>Birthday:</b> July 2009</p>
+              <p><b>Website  :</b> www.queen.dev</p>
+              <p><b>Degree:</b> Student</p>
+              <p><b>City:</b> Ambarawa</p>
+            </div>
+            <div>
+              <p><b>Age:</b> 15</p>
+              <p><b>Email:</b> quinsha.athaya879@gmail.com</p>
+              <p><b>Phone:</b> 085292773009</p>
+              <p><b>Freelance:</b> Available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="custom-footer">
+    <div class="footer-inner">
+      <p>© 2025 Quinsha Athaya Nasywamevia | All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

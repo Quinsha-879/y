@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 30vh;
+    }
+
+    .main-content {
+      display: flex;
+      flex: 1;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: rgb(0, 153, 255);
+      padding: 40px 20px;
+      height: 120vh;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+      font-family: Verdana;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 20px 0;
+    }
+
+    .sidebar li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar li a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 85px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 191, 255, 0.4);
+    }
+
+    .card:active {
+      transform: scale(0.95);
+      background-color: #e6f7ff;
+      box-shadow: 0 4px 12px rgba(0, 191, 255, 0.6);
+    }
+
+    .card i {
+      font-size: 30px;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .custom-footer {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4px);
+      animation: fadeInFooter 1s ease-in-out;
+    }
+
+    @keyframes fadeInFooter {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <div class="sidebar">
+      <h2>QUEEN'S</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-globe"></i>
+          <h3>Web <span style="color: #00bfff;">Design</span></h3>
+          <p>The ability to design the layout and structure of a website</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>CS<span style="color: #00bfff;">S</span></h3>
+          <p>The ability to use Cascading Style Sheets to style and format web pages</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-palette"></i>
+          <h3>HT<span style="color: #00bfff;">ML</span></h3>
+          <p>The ability to write the basic structure of a website using HyperText Markup Language</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-palette"></i>
+          <h3>Fig<span style="color: #00bfff;">ma</span></h3>
+          <p>The ability to use Figma to create digital UI/UX designs</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h3>UI/<span style="color: #00bfff;">UX</span></h3>
+          <p>The ability to design user interfaces and craft user experiences</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-server"></i>
+          <h3>Backend <span style="color: #00bfff;">Development</span></h3>
+          <p>The ability to design user interfaces and craft user experiences</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="custom-footer">
+    <div class="footer-inner">
+      <p>© 2025 Quinsha Athaya Nasywamevia | All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
